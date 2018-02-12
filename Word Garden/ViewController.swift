@@ -78,11 +78,11 @@ class ViewController: UIViewController {
             guessCountLabel.text = "You've got it! It only took you \(guessCount) guesses to get the word!"
         } else {
             //update our guess count
-            
+            guessCount += 1
             let guess = ( guessCount == 1 ? "guess" : "guesses")
             
             guessCountLabel.text = "You've made \(guessCount) \(guess)."
-            guessCount += 1
+
         }
         
     }
